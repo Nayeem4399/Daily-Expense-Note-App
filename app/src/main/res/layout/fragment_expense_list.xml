@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="2dp"
+    tools:context=".fragment.ExpenseListFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_margin="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sb"
+                android:outlineAmbientShadowColor="#F50707"
+                android:queryHint="Search type and date  !! "
+                android:inputType="text"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+
+                   >
+
+                   <Spinner
+                       android:layout_centerInParent="true"
+                       android:id="@+id/spinnerId2"
+                       android:gravity="center"
+                       android:layout_width="200dp"
+                       android:layout_height="20dp"
+
+
+                       />
+
+               </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dateEdTId2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="From Date "
+                        android:textStyle="bold"
+                        android:background="@drawable/boarder2"
+                        android:drawableRight="@drawable/date1"
+                        android:layout_margin="5dp"
+                        android:inputType="date"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dateEdtId3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="To Date "
+                        android:textStyle="bold"
+                        android:background="@drawable/boarder2"
+                        android:layout_margin="5dp"
+                        android:inputType="time"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:drawableRight="@drawable/date1"
+
+                        android:focusable="false"
+                        android:textSize="15sp"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/floatingActionBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/add2"
+        />
+
+</RelativeLayout>

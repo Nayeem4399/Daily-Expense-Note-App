@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+
+ <LinearLayout
+
+     android:layout_width="0dp"
+     android:layout_height="220dp"
+     android:layout_weight="0.8"
+     android:orientation="vertical"
+     >
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Expense Type "
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:textColor="#000"
+
+      />
+
+  <TextView
+
+      android:id="@+id/detType"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Electricity Bill "
+      android:textStyle="bold|italic"
+      android:textSize="18sp"
+
+
+      />
+
+
+  <TextView
+      android:layout_marginTop="3dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Amount "
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:textColor="#000"
+
+      />
+
+  <TextView
+      android:id="@+id/detAmount"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="000000000 "
+      android:textStyle="bold|italic"
+      android:textSize="18sp"
+
+
+      />
+
+
+  <TextView
+      android:layout_marginTop="3dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Date "
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:textColor="#000"
+
+      />
+
+  <TextView
+      android:id="@+id/detDate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="12|07|2019 "
+      android:textStyle="bold|italic"
+      android:textSize="18sp"
+
+
+      />
+
+
+
+  <TextView
+      android:layout_marginTop="3dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Time "
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:textColor="#000"
+
+      />
+
+  <TextView
+      android:id="@+id/detTime"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="9:40 am "
+      android:textStyle="bold|italic"
+      android:textSize="18sp"
+
+
+      />
+
+ </LinearLayout>
+
+
+ <LinearLayout
+     android:layout_width="0dp"
+     android:layout_height="220dp"
+     android:orientation="vertical"
+     android:layout_weight="1.2"
+     >
+
+
+
+  <ImageView
+      android:layout_marginLeft="3dp"
+      android:id="@+id/detImage"
+      android:layout_width="match_parent"
+      android:layout_height="220dp"
+      android:scaleType="fitXY"
+      android:layout_gravity="center"
+      android:visibility="visible"
+      />
+ </LinearLayout>
+
+</LinearLayout>
